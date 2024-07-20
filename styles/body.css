@@ -1,5 +1,50 @@
+
 #proj {
     display: grid;
     grid-template-columns: 38% 62%;
-    /* background-color: #1E1E1E; */
+    background-color: #1E1E1E;
+    gap: 1.25rem;
+    
+}
+
+aside {
+    margin-left: auto;
+    background-image: url(../assets/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .75rem;
+    margin-block: 1.25rem;
+width: 25rem;
+height: 45.5rem;
+
+header {
+margin: 2rem;
+
+img {
+height: 3rem;
+object-fit: cover;
+margin-bottom: 1rem;
+}
+
+h1 {
+    font: 400 2.5rem var(--font-lecker);
+    color: #FF598B;
+    margin-bottom: .25rem;
+}
+
+span {
+    color: var(--text-head);
+    font: var(--body-md);
+}
+
+}
+
+
+}
+
+main {
+    background-color: var(--input-stroke);
+    margin-block: 1.25rem;
+border-radius: .75rem;
+width: 35rem;
 }

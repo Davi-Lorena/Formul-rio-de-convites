@@ -23,11 +23,76 @@
 </head>
 <body>
     <div id="proj">
-        <aside></aside>
+        <aside>
+            <header>
+            <img src="./assets/Logo.svg" alt="ícone de festa">
+            <h1>Festivite</h1>
+            <span>Crie um convite digital para o seu evento</span>
+        </header>
+        </aside>
+<main>
+
+<h1>Crie seu convite</h1>
+
+<form>
+
+<fieldset id="event">
+<legend>
+    <img src="./assets/icons/calendar.png" alt="calendar">
+    Sobre o evento 
+</legend>
+
+<div class="input-wrapper">
+    <label for="nome">Título do evento</label>
+    <input type="text" name="nome" id="nome" placeholder="Nome do evento">
+</div>
+
+<div class="grid">
+<div class="input-wrapper">
+    <label for="init">início</label>
+    <input type="date" name="init" id="init">
+</div>
+
+<div class="input-wrapper">
+    <label for="end">Fim</label>
+    <input type="date" id="end" name="end">
+</div>
+
+<div class="input-wrapper">
+    <label>Tipo</label>
+    <div class="radio">
+        <div class="radio-select">
+        <img src="./assets/icons/building-2.png" alt="">
+        <label for="present">Presencial</label>
+    <input type="radio" name="present" id="present">
+</div>
+    <div class="radio-select">
+<img src="./assets/icons/video.png" alt="">
+<label for="online">Online</label>
+<input type="radio" name="online" id="online">
+</div>
+</div>
 
 
+</div>
 
-        <main></main>
+<div class="input-wrapper">
+    <label for="locate">Local</label>
+    <input type="text" id="locate" name="locate" placeholder="Link ou endereço">
+</div>
+
+
+</div>
+
+<div class="text-area">
+    <label for="descrip">Descrição</label>
+    <textarea name="descript" id="descript" placeholder="Escreva sobre os detalhes do evento"></textarea>
+</div>
+</fieldset>
+
+
+</form>
+</main>
 </div>
 </body>
 </html>
