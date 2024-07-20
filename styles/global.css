@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--font-lecker: 'Leckerli One', sans-serif; 
+
+
+--font-baloo: 'Baloo 2', sans-serif; 
+
+--head-md: Bold 28px var(--cont-baloo;)
+--head-sm: Bold 18px var(--font-baloo); 
+
+
+--font-sans: 'Open Sans', sans-serif;
+
+--body-md: 16px var(--font-sans);
+--body-sm: 14px var(--font-sans);
+--body-xs: 12px var(--font-sans);
+
+/*colors*/
+
+--text-body: #C8CDD0;
+--text-head: #F9F9F9;
+
+--snape-back: #131516;
+--snape-body: #212427;
+--snape-button: #2D3136;
+--snape-hover: #383D42;
+
+--input-base: #1C1F21;
+--input-stroke: #363B40;
+--input-placeholder: #869198;
+
+--danger: #FF5959;
+
+--brand-light: #59B2FF;
+--brand-mid: #3487CF;
+--brand-dark: #1D6FB6;
+
+}

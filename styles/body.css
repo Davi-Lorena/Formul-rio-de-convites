@@ -1,0 +1,5 @@
+#proj {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    /* background-color: #1E1E1E; */
+}
