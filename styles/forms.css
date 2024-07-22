@@ -1,0 +1,130 @@
+form {
+    margin-inline: 8.125rem;
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1rem;
+
+legend {
+display: flex;
+align-items: center;
+gap: .75rem;
+ color: var(--text-head);
+ font: var(--head-sm);
+ margin-bottom: 1.5rem;
+
+label {
+    display: block;
+}
+
+} 
+}
+
+
+}
+
+input:not([type="radio"]), textarea {
+appearance: none;
+border: 1px solid var(--input-stroke);
+background-color: var(--input-base);
+border-radius: .5rem;
+height: 3rem;
+width: 100%;
+padding: 1rem;
+display: flex;
+align-items: center;
+gap: .5rem;
+margin-top: .75rem;
+color: var(--text-head);
+font: 400 var(--body-md);
+
+}
+
+input:not([type="radio"]):focus-within, textarea:focus-within {
+    outline: 1px solid var(--brand-light);
+}
+
+
+input::placeholder, textarea::placeholder {
+    color: var(--input-placeholder);
+    font: 400 var(--body-md);
+}
+
+
+
+
+#event {
+
+label {
+    display: block;
+    color: var(--text-body);
+    font: 400 var(--body-sm);
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+
+& input[type="datetime-local"] 
+{
+    text-transform: uppercase;
+    color: var(--input-placeholder);
+    font: 400 var(--body-md);
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}
+
+.radio { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--input-stroke);
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: var(--input-base);
+    margin-top: .75rem;
+
+    .radio-select {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    gap: .5rem;
+
+        & input, & input:hover, & input:focus {
+
+        position: absolute;
+           appearance: none;
+           height: 3rem;
+           width: 100%;
+           cursor: pointer;
+        }
+
+        &:has(:checked) {
+            border-radius: .25rem;
+            margin: .25rem;
+            color: var(--text-head);
+            background-color: var(--shape-button);
+            & svg path {
+                stroke: var(--brand-light);
+            }
+        }
+    
+    }
+
+}
+
+
+}
+
+& textarea {
+    overflow: hidden;
+    height: 8.5rem;
+}
+
+
+}
+
+

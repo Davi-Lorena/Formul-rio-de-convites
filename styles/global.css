@@ -10,7 +10,7 @@
 
 --font-baloo: 'Baloo 2', sans-serif; 
 
---head-md: Bold 28px var(--cont-baloo;)
+--head-md: Bold 28px var(--font-baloo);
 --head-sm: Bold 18px var(--font-baloo); 
 
 
@@ -40,4 +40,9 @@
 --brand-mid: #3487CF;
 --brand-dark: #1D6FB6;
 
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
 }

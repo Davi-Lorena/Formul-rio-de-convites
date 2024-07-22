@@ -4,6 +4,8 @@
     grid-template-columns: 38% 62%;
     background-color: #1E1E1E;
     gap: 1.25rem;
+    overflow: hidden;
+    height: 100vh;
     
 }
 
@@ -22,7 +24,6 @@ margin: 2rem;
 
 img {
 height: 3rem;
-object-fit: cover;
 margin-bottom: 1rem;
 }
 
@@ -43,8 +44,16 @@ span {
 }
 
 main {
-    background-color: var(--input-stroke);
+    overflow: auto;
+    background-color: var(--shape-body);
     margin-block: 1.25rem;
 border-radius: .75rem;
-width: 35rem;
+
+
+h1 {
+color: var(--text-head);
+font: var(--head-md);
+margin-inline: 8.125rem;
+padding-block: 5rem 2.5rem;
+}
 }
