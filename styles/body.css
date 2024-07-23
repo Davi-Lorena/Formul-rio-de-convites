@@ -1,11 +1,11 @@
 
 #proj {
     display: grid;
-    grid-template-columns: 38% 62%;
+    grid-template-columns: 30% 70%;
     background-color: #1E1E1E;
     gap: 1.25rem;
     overflow: hidden;
-    
+    height: 100vh;
 }
 
 aside {
@@ -16,7 +16,7 @@ aside {
     border-radius: .75rem;
     margin-block: 1.25rem;
 width: 25rem;
-height: 45.5rem;
+height: 41.5rem;
 
 header {
 margin: 2rem;
@@ -43,11 +43,12 @@ span {
 }
 
 main {
+    height: 42rem;
     overflow: auto;
     background-color: var(--shape-body);
     margin-block: 1.25rem;
 border-radius: .75rem;
-
+width: 98%;
 
 h1 {
 color: var(--text-head);

@@ -59,7 +59,6 @@ fieldset + fieldset {
 #event {
 
 label {
-    display: block;
     color: var(--text-body);
     font: 400 var(--body-sm);
 }
@@ -182,6 +181,132 @@ position: relative;
     gap: 8px;
 }
 
+
+#light-plan {
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 1rem;
+
+}
+
+.bright {
+    & label {
+        display: block;
+        color: var(--text-body);
+        margin-bottom: .75rem;
+    }
+
+    & .flex-2 {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+        &:has(:checked) {
+            & .escuro {
+                display: none;
+            }
+
+            & .claro {
+                display: unset;
+            }
+        }
+
+& span {
+    font: 400 var(--body-sm);
+color: var(--text-head);
+margin-right: 3.5rem;
+}
+
+.claro {
+    display: none;
+}
+
+    } 
+
+& .ipt {
+    display: grid;
+    align-items: center;
+    position: relative;
+    background-color: var(--input-base);
+    width: 4rem;
+    height: 2rem;
+    border-radius: 999px;
+    border: 1px solid var(--input-stroke);
+
+
+& input {
+
+    all: unset;
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--input-stroke);
+    border-radius: 50%;
+    margin: .25rem;
+cursor: pointer;
+}
+
+&:has(:checked) {
+    background-color: var(--brand-light);
+   & input {
+background-color: var(--text-head);
+justify-self: end;
+
+}
+}
+
+}
+
+}
+
+#wallpap {
+    display: flex;
+    
+}
+#fotocap {
+    color: var(--text-body);
+    font: 400 var(--body-sm);
+}
+
+
+.docfile {
+margin-top: .75rem;
+display: flex;
+align-items: center;
+gap: .75rem;
+position: relative;
+.docinpt {
+    cursor: pointer;
+    z-index: 1;
+background-color: var(--shape-button);
+height: 2.5rem;
+
+display: flex;
+align-items: center;
+padding: .75rem;
+gap: .5rem;
+border-radius: .5rem;
+font: 400 var(--body-sm);
+color: var(--text-head);
+
+&:has(:filled) {
+    & #nothing {
+        display: none;
+    }
+}
+
+}
+
+& input {
+display: none;
+}
+
+& #nothing {
+    font: 400 var(--body-md);
+    color: var(--input-placeholder);
+}
+
+}
 
 
 }
