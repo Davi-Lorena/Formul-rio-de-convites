@@ -34,7 +34,7 @@
 
 <h1>Crie seu convite</h1>
 
-<form>
+<form method="post" enctype="multipart/form-data">
 
 <fieldset id="event">
 <legend>
@@ -330,6 +330,37 @@ Dados para contato
 
 </div>
 </fieldset>
+
+<div id="checks">
+<div class="align">
+    <div class="box">
+    <input type="checkbox">
+    </div>
+    <label>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+</div>
+
+<div class="align">
+    <div class="box">
+    <input type="checkbox">
+    </div>
+    <label>Aceito receber atualizações e promoções por e-mail</label>
+</div>
+
+<div class="align">
+    <div class="box">
+    <input type="checkbox">
+    </div>
+    <label>Aceito receber atualizações e promoções por SMS</label>
+</div>
+</div>
+
+
+<div id="upload">
+    <img src="./assets/icons/ticket.svg" alt="ticket">
+    <button type="submit">
+        <span>Gerar convite</span>
+    </button>
+    </div>
 
 </form>
 </main>
