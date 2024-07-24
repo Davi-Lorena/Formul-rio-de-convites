@@ -18,7 +18,7 @@
 
 --body-md: 16px var(--font-sans);
 --body-sm: 14px var(--font-sans);
---body-xs: 12px var(--font-sans);
+--body-xs: 400 12px var(--font-sans);
 
 /*colors*/
 

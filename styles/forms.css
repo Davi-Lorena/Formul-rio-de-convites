@@ -310,3 +310,62 @@ display: none;
 
 
 }
+
+#data {
+
+& legend img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+label {
+    font: 400 var(--body-sm);
+    color: var(--text-body);
+}
+.requid {
+
+
+& .danger {
+display: flex;
+align-items: center;
+gap: .5rem;
+margin-top: .5rem;
+
+& span { 
+    color: var(--danger);
+    font: var(--body-xs);
+   }
+
+   img {
+    height: 1rem;
+    width: 1rem;
+}
+
+}
+
+& input {
+    &:invalid {
+        border: 1px solid var(--danger);
+    }
+
+    &:focus-within {
+        border: none;
+    }
+
+&:valid + .danger, &:focus-within + .danger {
+        display: none;
+}
+
+
+}
+
+}
+& .colum {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+margin-top: 1rem;
+}
+
+
+}
