@@ -48,20 +48,29 @@
 <div class="input-wrapper">
     <label for="nome">Título</label>
     <input type="text" name="nome" id="nome" placeholder="Nome do evento" required>
+
+    <div class="error">
+        <img src="./assets/icons/circle-alert.svg" alt="alert">
+         <span>Error message</span>
+        </div>
+
 </div>
 
+
 <div class="grid">
-<div class="input-wrapper">
+<div class="input-dat">
     <label for="init">início</label>
     <input type="datetime-local" name="init" id="init">
 </div>
 
-<div class="input-wrapper">
+
+<div class="input-dat">
     <label for="end">Fim</label>
     <input type="datetime-local" id="end" name="end">
 </div>
 
-<div class="input-wrapper">
+
+<div>
     <label>Tipo</label>
     <div class="radio">
         <div class="radio-select">
@@ -95,7 +104,10 @@
     <label for="locate">Local</label>
     <input type="text" id="locate" name="locate" placeholder="Link ou endereço">
 </div>
-
+<div class="error">
+    <img src="./assets/icons/circle-alert.svg" alt="alert">
+     <span>Error message</span>
+    </div>
 
 </div>
 
@@ -103,6 +115,10 @@
     <label for="descrip">Descrição</label>
     <textarea name="descript" id="descript" placeholder="Escreva sobre os detalhes do evento" rows="20" cols="20"></textarea>
 </div>
+<div class="error">
+    <img src="./assets/icons/circle-alert.svg" alt="alert">
+     <span>Error message</span>
+    </div>
 </fieldset>
 
 <fieldset id="style">
@@ -288,9 +304,8 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z" fill="#59B2FF"/>
                 </svg>
                 <span>Selecionar</span>
-</label for="docs">
-<input type="file" name="docs" id="docs" >
-    <span id="nothing">Nenhum arquivo selecionado</span>
+</label>
+<input type="file" name="docs" id="docs" accept="image/*" required>
 </div>
 </div>
 
@@ -353,7 +368,6 @@ Dados para contato
     <label>Aceito receber atualizações e promoções por SMS</label>
 </div>
 </div>
-
 
 <div id="upload">
     <img src="./assets/icons/ticket.svg" alt="ticket">

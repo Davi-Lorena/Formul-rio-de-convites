@@ -18,13 +18,14 @@ label {
     display: block;
 }
 
-} 
+}
 }
 
 
 }
 
 input:not([type="radio"], [type="checkbox"]), textarea {
+    cursor: pointer;
 appearance: none;
 border: 1px solid var(--input-stroke);
 background-color: var(--input-base);
@@ -38,17 +39,35 @@ gap: .5rem;
 margin-top: .75rem;
 color: var(--text-head);
 font: 400 var(--body-md);
-
 }
+
 
 input:not([type="radio"]):focus-within, textarea:focus-within {
     outline: 1px solid var(--brand-light);
 }
 
-
 input::placeholder, textarea::placeholder {
     color: var(--input-placeholder);
     font: 400 var(--body-md);
+}
+
+.error {
+   
+    display: none;
+    /* align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+
+    & span {
+        color: var(--danger);
+        font: var(--body-xs);
+       }
+
+       img {
+        height: 1rem;
+        width: 1rem;
+    } */
+
 }
 
 fieldset + fieldset {
@@ -68,7 +87,7 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 1rem;
 
-& input[type="datetime-local"] 
+& input[type="datetime-local"]
 {
     text-transform: uppercase;
     color: var(--input-placeholder);
@@ -78,7 +97,7 @@ gap: 1rem;
     }
 }
 
-.radio { 
+.radio {
   display: grid;
   grid-template-columns: 1fr 1fr;
     border: 1px solid var(--input-stroke);
@@ -94,6 +113,11 @@ gap: 1rem;
         position: relative;
     gap: .5rem;
 
+    & svg {
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+
         & input, & input:hover, & input:focus {
 
         position: absolute;
@@ -108,11 +132,16 @@ gap: 1rem;
             margin: .25rem;
             color: var(--text-head);
             background-color: var(--shape-button);
+
+label {
+    color: var(--text-head);
+}
+
             & svg path {
                 stroke: var(--brand-light);
             }
         }
-    
+
     }
 
 }
@@ -146,18 +175,18 @@ color: var(--text-head);
     display: flex;
     align-items: center;
     justify-content: center;
-    
-width: 2.5rem;
-height: 2.5rem;
+    position: relative;
+width: 3rem;
+height: 3rem;
 border-radius: 50%;
 background-color: var(--shape-button);
 
 & .color-radio {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-position: relative;
-    
+
+
 & input, & input:hover, & input:focus {
         position: absolute;
         appearance: none;
@@ -169,7 +198,11 @@ position: relative;
 }
 
 &:has(:checked) {
-    outline: 2px solid var(--brand-light);
+    outline: 3px solid var(--brand-light);
+}
+
+&:hover, &:focus-within {
+    background-color: var(--shape-hover);
 }
 
 }
@@ -183,13 +216,13 @@ position: relative;
 
 
 #light-plan {
-display: grid;
-grid-template-columns: 1fr 2fr;
-gap: 1rem;
-
+display: flex;
+gap: 6.5rem;
 }
 
 .bright {
+    min-width: 11rem;
+    padding-right: 3.5rem;
     & label {
         display: block;
         color: var(--text-body);
@@ -214,14 +247,13 @@ gap: 1rem;
 & span {
     font: 400 var(--body-sm);
 color: var(--text-head);
-margin-right: 3.5rem;
 }
 
 .claro {
     display: none;
 }
 
-    } 
+    }
 
 & .ipt {
     display: grid;
@@ -261,7 +293,6 @@ justify-self: end;
 
 #wallpap {
     display: flex;
-    
 }
 #fotocap {
     color: var(--text-body);
@@ -275,6 +306,7 @@ display: flex;
 align-items: center;
 gap: .75rem;
 position: relative;
+
 .docinpt {
     cursor: pointer;
     z-index: 1;
@@ -289,22 +321,28 @@ border-radius: .5rem;
 font: 400 var(--body-sm);
 color: var(--text-head);
 
-&:has(:filled) {
-    & #nothing {
-        display: none;
-    }
+&:hover {
+    background-color: var(--shape-hover);
+
+& svg path {
+    stroke: var(--brand-light);
 }
 
 }
+
+}
+
 
 & input {
-display: none;
+    all: unset;
+&::file-selector-button {
+    display: none;
 }
-
-& #nothing {
     font: 400 var(--body-md);
     color: var(--input-placeholder);
 }
+
+
 
 }
 
@@ -325,24 +363,26 @@ label {
 }
 .requid {
 
+    & .danger {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-top: .5rem;
 
-& .danger {
-display: flex;
-align-items: center;
-gap: .5rem;
-margin-top: .5rem;
+        & span {
+            color: var(--danger);
+            font: var(--body-xs);
+           }
 
-& span { 
-    color: var(--danger);
-    font: var(--body-xs);
-   }
+           img {
+            height: 1rem;
+            width: 1rem;
+        }
 
-   img {
-    height: 1rem;
-    width: 1rem;
-}
+    }
 
-}
+
+
 
 & input {
     &:invalid {
@@ -384,6 +424,10 @@ gap: .5rem;
 
 & a {
     color: var(--brand-light);
+
+    &:hover {
+        color: var(--brand-mid);
+    }
 }
 
  & .align {
@@ -393,7 +437,7 @@ gap: .5rem;
 }
 
 & .box {
-    
+
     background-color: var(--input-base);
 position: relative;
 height: 1.25rem;
@@ -446,5 +490,8 @@ cursor: pointer;
    color: var(--text-head);
 }
 
+&:hover {
+    background-color: var(--brand-mid);
+}
 
 }
