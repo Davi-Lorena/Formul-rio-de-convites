@@ -51,10 +51,20 @@ input::placeholder, textarea::placeholder {
     font: 400 var(--body-md);
 }
 
+.input-wrapper {
+    & input:not(:focus):invalid {
+        outline: 1px solid var(--danger);
+    }
+
+    & input:not(:focus):invalid ~ .error {
+        display: flex;
+    }
+}
+
 .error {
    
     display: none;
-    /* align-items: center;
+    align-items: center;
     gap: .5rem;
     margin-top: .5rem;
 
@@ -66,7 +76,7 @@ input::placeholder, textarea::placeholder {
        img {
         height: 1rem;
         width: 1rem;
-    } */
+    }
 
 }
 

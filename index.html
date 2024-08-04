@@ -47,7 +47,7 @@
 
 <div class="input-wrapper">
     <label for="nome">Título</label>
-    <input type="text" name="nome" id="nome" placeholder="Nome do evento" required>
+    <input type="text" name="nome" id="nome" placeholder="Nome do evento" pattern="[a-z0-9]{4,55}">
 
     <div class="error">
         <img src="./assets/icons/circle-alert.svg" alt="alert">
@@ -99,26 +99,20 @@
 
 
 </div>
-
 <div class="input-wrapper">
     <label for="locate">Local</label>
-    <input type="text" id="locate" name="locate" placeholder="Link ou endereço">
-</div>
+    <input type="text" id="locate" name="locate" placeholder="Link ou endereço" pattern="[a-z0-9]{4,55}">
 <div class="error">
-    <img src="./assets/icons/circle-alert.svg" alt="alert">
-     <span>Error message</span>
+        <img src="./assets/icons/circle-alert.svg" alt="alert">
+         <span>Error message</span>
     </div>
-
 </div>
 
-<div class="text-area">
+</div>
+<div>
     <label for="descrip">Descrição</label>
-    <textarea name="descript" id="descript" placeholder="Escreva sobre os detalhes do evento" rows="20" cols="20"></textarea>
+    <textarea name="descript" id="descript" placeholder="Escreva sobre os detalhes do evento" rows="20" cols="20" pattern="[a-z0-9]{4,75}"></textarea>
 </div>
-<div class="error">
-    <img src="./assets/icons/circle-alert.svg" alt="alert">
-     <span>Error message</span>
-    </div>
 </fieldset>
 
 <fieldset id="style">
@@ -331,19 +325,29 @@ Dados para contato
 </div>
 
 <div class="colum">
-    <div class="eml">
+    <div class="input-wrapper">
     <label for="mail">
         E-mail
     </label>
     <input type="email" id="mail" name="mail" placeholder="exemplo@email.com">
+    <div class="error">
+        <img src="./assets/icons/circle-alert.svg" alt="alert">
+         <span>Error message</span>
+        </div>
 </div>
-<div class="telf">
+
+<div class="input-wrapper">
     <label for="number">Telefone</label>
-    <input type="tel" placeholder="(99) 99999-9999 ">
+    <input type="tel" placeholder="(99) 99999-9999" pattern="[0-9]{8,16}">
+<div class="error">
+    <img src="./assets/icons/circle-alert.svg" alt="alert">
+     <span>Error message</span>
+    </div>
+    </div>
 </div>
 </div>
 
-</div>
+
 </fieldset>
 
 <div id="checks">
