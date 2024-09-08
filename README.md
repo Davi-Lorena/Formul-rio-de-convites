@@ -1,4 +1,7 @@
 # Formulário de convites
+
+![Foto 1](https://github.com/user-attachments/assets/12c85253-6bcd-4d05-9450-b4168f79345c)
+
 Feito como um desafio prático da trilha Fullstack, da Rocketseat, possibilitaria a geração de um convite para determinado evento.
 ## Elaborado somente com:
 - HTML
@@ -10,6 +13,3 @@ Feito como um desafio prático da trilha Fullstack, da Rocketseat, possibilitari
   ### Planejamento futuro:
   Aplicação da responsividade e captura de dados para que o convite seja, de fato, gerado.
   
-![Foto 1](https://github.com/user-attachments/assets/12c85253-6bcd-4d05-9450-b4168f79345c)
-![Foto 2](https://github.com/user-attachments/assets/be8bc2f3-fed2-4f47-a7f4-3b02363d2a32)
-![Foto 3](https://github.com/user-attachments/assets/32dd9b5b-6f45-4a8c-a82e-c99bc875e5fd)
